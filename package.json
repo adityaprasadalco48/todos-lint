@@ -16,8 +16,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "lint": "eslint src/**/*.js",
-        "lint:fix": "eslint --fix src/**/*.js"
+        "lint:js": "eslint . --ext .js,.jsx",
+        "lint:js:fix": "npm run lint:js -- --fix"
     },
     "browserslist": {
         "production": [
@@ -48,7 +48,7 @@
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged",
-            "pre-push": "CI=true npm test"
+            "pre-push": "npm test"
         }
     },
     "lint-staged": {
