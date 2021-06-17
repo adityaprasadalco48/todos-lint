@@ -3,8 +3,8 @@ const Product = () => {
 
   return (
     <div>
-      {arr.map((item) => {
-        return <p>{item}</p>;
+      {arr.map((item, index) => {
+        return <p key={index}>{item}</p>;
       })}
     </div>
   );
