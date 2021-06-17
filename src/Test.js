@@ -8,8 +8,7 @@ export default function Testing() {
     <div>
       {huskyItem.map((item, index) => (
         <>
-          <h2 key={index}>Testing for Husky = 
-          {item}</h2>
+          <h2 key={index}>Testing for Husky ={item}</h2>
         </>
       ))}
     </div>
