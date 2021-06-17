@@ -8,7 +8,7 @@ import Testing from './Test';
 ReactDOM.render(
     <React.StrictMode>
         <App />
-        <Testing />
+                    <Testing />
     </React.StrictMode>,
     document.getElementById('root'),
 );
