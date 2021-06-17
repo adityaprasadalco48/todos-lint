@@ -48,12 +48,14 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm test"
+      "pre-push": "CI=true npm test"
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md,html}": [
+    "**/*.{js,json,css,md,html}*": [
+      "eslint",
       "prettier --single-quote --write",
+      "test --watchAll = false --findRelatedTests --bail",
       "git add"
     ]
   }
