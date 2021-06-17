@@ -1,7 +1,0 @@
-{
-  "extends": ["kentcdodds", "kentcdodds/react"],
-  "rules": {
-    // your overrides
-    "react/jsx-pascal-case": "off"
-  }
-}
